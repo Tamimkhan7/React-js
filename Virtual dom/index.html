@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Virtual DOM</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <ul id="fruits"></ul>
+      <br />
+      <p>
+        <input type="text" id="input" />
+      </p>
+      <button id="button" onclick="addItem()">Add Item</button>
+    </div>
     <script src="app.js"></script>
+    <!-- <script src="react.js"></script> -->
   </body>
 </html>
