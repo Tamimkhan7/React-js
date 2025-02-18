@@ -7,7 +7,7 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false,
@@ -24,5 +24,12 @@
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "random": "cpp",
+    "chrono": "cpp",
+    "limits": "cpp",
+    "valarray": "cpp",
+    "algorithm": "cpp"
   }
 }
