@@ -1,3 +1,21 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "files.associations": {
+    "array": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "span": "cpp",
+    "string": "cpp",
+    "bitset": "cpp",
+    "initializer_list": "cpp",
+    "ranges": "cpp",
+    "regex": "cpp",
+    "utility": "cpp",
+    "valarray": "cpp",
+    "tuple": "cpp",
+    "iostream": "cpp",
+    "chrono": "cpp"
+  }
 }

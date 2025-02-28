@@ -10,13 +10,19 @@ class clock extends React.Component {
   //why we use componentDidMount  In React, the componentDidMount function is used to perform any necessary setup tasks or side effects after a component has been rendered and added to the DOM,
   componentDidMount() {
     //i do use to here at setInterval for data my updated date or time
-    setInterval(() => {
-      //setState is a state for update time or date,,,setState function diye amra basically time ke update kori
-      this.setState({
-        date: new Date(),
-      });
-    }, 1000); // is it 1000 ms, or 1's. how many time after my clock has change
+    setInterval(() => this.tick(), 1000);
   }
+  //this function will be executed here for stop the execution time
+  componentWillUnmount() {
+
+  }
+
+  tick() {
+    //setState is a state for update time or date,,,setState function diye amra basically time ke update kori
+    this.setState({
+      date: new Date(),
+    });
+  } // is it 1000 ms, or 1's. how many time after my clock has changen
 
   render() {
     return (
@@ -30,3 +36,6 @@ class clock extends React.Component {
 }
 
 export default clock;
+
+
+//state is a javascript  object
