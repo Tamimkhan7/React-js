@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="handleClick()">Click Here</button> -->
+    <!-- aitar khette link a click korle onno page a jabe na oita oh dekhabe na, just dekhabe link was clicked and return false kore dibe mane onno page a ar jacce na-->
+    <!-- <a
+      href="./notfound.html"
+      onclick="console.log('link was clicked'); return false"
+      >Click here</a
+    >
+    <script>
+      function handleClick() {
+        console.log("The button was clicked");
+      } -->
+    <!-- </script> -->
+
+    <!-- how to solve this propety -->
+
+    <!-- <script>
+      const javascript = {
+        name: "javascript",
+        libraries: ["React", "vue", "Angular"],
+        printLibraries: function () {
+          this.libraries.forEach(
+            function (library) {
+              // this.name didn't work here that's why we can create a bind function for this working here
+
+              console.log(`${this.name} loves ${library}`);
+            }.bind(this), //now it is work here
+          );
+        },
+      };
+    </script> -->
+    <!-- it is solve another formula we will use -->
+    <!-- <script>
+      const javascript = {
+        name: "javascript",
+        libraries: ["React", "vue", "Angular"],
+        printLibraries: function () {
+          this.libraries.forEach((library) => {
+            //just solve it, we can use just arrow junction that time it is solve it
+            console.log(`${this.name} loves ${library}`);
+          });
+        },
+      };
+    </script> -->
+
+    <!-- we can use another formula for solve this issue -->
+
+    <script>
+      const javascript = {
+        name: "javascript",
+        libraries: ["React", "vue", "Angular"],
+        printLibraries: function () {
+          let self = this;
+          //jjetu this change hoye jacce tai ami ai vabe this ke self funciton ar modde store kore rakhte pari
+          this.libraries.forEach((library) => {
+            //solve the issue, just useing the self function
+            console.log(`${self.name} loves ${library}`);
+          });
+        },
+      };
+    </script>
+  </body>
+</html>
